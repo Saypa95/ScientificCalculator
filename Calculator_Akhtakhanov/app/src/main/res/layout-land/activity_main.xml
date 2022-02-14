@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black"
+tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnBackspace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="btnBackspace"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_backspace" />
+
+<TableLayout
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginBottom="5dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnPercent"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnPercent"
+            android:text="%"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnMC"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnMC"
+            android:text="mc"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnMPlus"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnMplus"
+            android:text="m+"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnMminus"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnMminus"
+            android:text="m-"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnMR"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnMR"
+            android:text="mr"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_grey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnClear"
+            android:text="AC"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnSkobky"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_grey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnSkobky"
+            android:text="( )"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnStepen"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_grey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnStepen"
+            android:text="^"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnDelenie"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_orange"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnDelenie"
+            android:text="÷"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnXSquared"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnXSquared"
+            android:text="@string/xSquared"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnXCube"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnXCube"
+            android:text="@string/xCube"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnEPowX"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnEPowX"
+            android:text="@string/ePowX"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/TenPowX"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnTenPowX"
+            android:text="@string/TenPowX"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnFact"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnFact"
+            android:text="x!"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnSeven"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_darkgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnSeven"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnEight"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_darkgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnEight"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnNine"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_darkgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnNine"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnUmnozhenie"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_orange"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnUmnozhenie"
+            android:text="×"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnOneSplashX"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnOneSplashX"
+            android:text="1/x"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnSquareRoot"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnSquareRoot"
+            android:text="√x"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnLn"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnLn"
+            android:text="ln"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnLogTen"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnLogTen"
+            android:text="@string/logTen"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnlogTwo"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnLogTwo"
+            android:text="@string/logTwo"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_darkgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnFour"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnFive"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_darkgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnFive"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnSix"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_darkgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnSix"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_orange"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnMinus"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnSin"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnSin"
+            android:text="sin"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnCos"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnCos"
+            android:text="cos"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnTan"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnTan"
+            android:text="tan"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnMod"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnMod"
+            android:text="mod"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnLog"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnLog"
+            android:text="@string/logY"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_darkgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnOne"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnTwo"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_darkgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnTwo"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnThree"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_darkgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnThree"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_orange"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnPlus"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnArcSin"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnArcSin"
+            android:text="asin"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnArcCos"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnArcCos"
+            android:text="acos"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnArcTan"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnArcTan"
+            android:text="atan"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnExp"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnExp"
+            android:text="e"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnPi"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_darkestgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnPi"
+            android:text="π"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnPlusMinus"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_darkgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnPlusMinus"
+            android:text="+/-"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnZero"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_darkgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnZero"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnZapyataya"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_darkgrey"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnZapyataya"
+            android:text=","
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnRavno"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_orange"
+            android:fontFamily="@font/sf_pro_display"
+            android:onClick="btnRavno"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+    </TableRow>
+</TableLayout>
+
+<EditText
+    android:id="@+id/EditText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:autofillHints="false"
+    android:background="@android:color/transparent"
+    android:fontFamily="@font/sf_pro_display"
+    android:inputType="textNoSuggestions"
+    android:textAlignment="textEnd"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="20dp"
+    android:textColor="@color/white"
+    android:textCursorDrawable="@drawable/color_cursor"
+    android:textSize="36sp"
+    app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+    app:layout_constraintEnd_toStartOf="@+id/btnBackspace"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/PreviousText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/sf_pro_display"
+        android:inputType="textNoSuggestions"
+        android:textAlignment="textEnd"
+        android:textColor="@color/dark_grey"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/EditText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

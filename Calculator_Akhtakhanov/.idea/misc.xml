@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/WSR/Desktop/ScientificCalculator-main/Calculator_Akhtakhanov/app/src/main/res/layout-land/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/WSR/Desktop/ScientificCalculator-main/Calculator_Akhtakhanov/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="app/src/main/res/drawable/backgroung_splash.xml" value="0.2641350210970464" />
+        <entry key="app/src/main/res/drawable/button_darkestgrey.xml" value="0.2675213675213675" />
+        <entry key="app/src/main/res/drawable/button_darkgrey.xml" value="0.2675213675213675" />
+        <entry key="app/src/main/res/drawable/button_orange.xml" value="0.2675213675213675" />
+        <entry key="app/src/main/res/drawable/button_style.xml" value="0.2675213675213675" />
+        <entry key="app/src/main/res/drawable/style.xml" value="0.15085470085470085" />
+        <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.2322010633977513" />
+        <entry key="app/src/main/res/layout/activity_calculator.xml" value="0.2283036614942662" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.12426900584795321" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

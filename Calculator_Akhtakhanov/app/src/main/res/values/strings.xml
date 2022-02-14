@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculator_Akhtakhanov</string>
+
+    <string name="xSquared">x<sup><small>2</small></sup></string>
+    <string name="xCube">x<sup><small>3</small></sup></string>
+    <string name="ePowX">e<sup><small>x</small></sup></string>
+    <string name="TenPowX">10<sup><small>x</small></sup></string>
+    <string name="logTen">log<sub><small>10</small></sub></string>
+    <string name="logTwo">log<sub><small>2</small></sub></string>
+    <string name="logY">log<sub><small>y</small></sub></string>
+</resources>
